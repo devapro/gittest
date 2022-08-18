@@ -2,7 +2,7 @@
 
 #### Create new release branch
 
-RELEASE_NAME="0.0.3"
+RELEASE_NAME="0.0.4"
 
 git checkout develop
 
@@ -25,6 +25,6 @@ fi
 
 #### Create change log
 
-git log --oneline --decorate
-git log --pretty=”%s”
-git log --pretty="- %s"
+#git log --oneline --decorate
+#git log --pretty=”%s”
+#git log --pretty="- %s"

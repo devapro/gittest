@@ -2,7 +2,7 @@
 
 #### Create new release branch
 
-RELEASE_NAME="0.0.4"
+RELEASE_NAME="0.0.5"
 
 git checkout develop
 
@@ -28,3 +28,11 @@ fi
 #git log --oneline --decorate
 #git log --pretty=”%s”
 #git log --pretty="- %s"
+
+git log --no-merges --pretty="- %s" release_v0.0.3..HEAD
+
+git log --no-merges --pretty="- %s" v6.11.4..HEAD > CENGELOG.md
+
+git tag --sort=-creatordate
+
+git tag --sort=-committerdate
